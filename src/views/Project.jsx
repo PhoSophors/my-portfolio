@@ -11,7 +11,7 @@ function Project() {
       <div className="my-project" id="project">
         <section class="bg-white dark:bg-gray-900">
           <div class=" py-1 px-4 xl:h-screen md:h-full sm:h-full flex items-center  mx-auto max-w-screen-xl xl:grid  lg:py-1 ">
-            <div class="font-light  content-center text-gray-500 sm:text-lg dark:text-gray-400">
+            <div class="font-light content-center text-gray-500 sm:text-lg dark:text-gray-400">
               <br />
               <br />
               <h2 class="mb-4 tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
@@ -20,9 +20,9 @@ function Project() {
               <br />
               <br />
               {/* grid 1 */}
-              <div class="grid grid-cols-1 lg:grid-cols-3 gap-1 ">
+              <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
                 <motion.div
-                  className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className=" p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -36,13 +36,9 @@ function Project() {
                     },
                   }}
                 >
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://the-travels.vercel.app/" target="blank">
-                      <img
-                        class="rounded-t-lg img"
-                        src={travel_frontend}
-                        alt=""
-                      />
+                      <img className="rounded-lg" src={travel_frontend} alt="" />
                     </a>
                     <div class="p-5">
                       <a href="https://the-travels.vercel.app/" target="blank">
@@ -84,7 +80,7 @@ function Project() {
                 </motion.div>
 
                 <motion.div
-                  className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className=" p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -98,13 +94,9 @@ function Project() {
                     },
                   }}
                 >
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://cam-travel.store/" target="blank">
-                      <img
-                        class="rounded-t-lg img"
-                        src={travel_official}
-                        alt=""
-                      />
+                      <img className="rounded-lg" src={travel_official} alt="" />
                     </a>
                     <div class="p-5">
                       <a href="https://cam-travel.store/" target="blank">
@@ -146,7 +138,7 @@ function Project() {
                 </motion.div>
 
                 <motion.div
-                  className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className=" p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -160,12 +152,12 @@ function Project() {
                     },
                   }}
                 >
-                  <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                  <div class="bg-white  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a
                       href="https://cam-library-official.vercel.app/"
                       target="blank"
                     >
-                      <img class="rounded-t-lg img" src={library} alt="" />
+                      <img className="rounded-lg" src={library} alt="" />
                     </a>
                     <div class="p-5">
                       <a

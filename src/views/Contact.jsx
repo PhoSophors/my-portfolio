@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+
 const Contact = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const Contact = () => {
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
                 {/* madia */}
                 <div class="w-full  p-5 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-                  <h5 class="mb-3 text-base font-semibold text-gray-900 md:text-xl dark:text-white">
+                  <h5 class="mb-3 text-base font-semibold text-gray-900  md:text-xl dark:text-white">
                     Contact Me
                   </h5>
                   <p class="text-sm font-normal text-gray-500 dark:text-gray-400">
