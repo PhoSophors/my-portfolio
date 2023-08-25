@@ -1,0 +1,132 @@
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+
+  --background: var(--black);
+  --accent: var(--pink);
+}
+
+
+span {
+  font-family: var(--font-fam);
+  font-size: 1.5rem;
+}
+.header{    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem ;
+  position: fixed;
+  width: 100%;
+  height:80px;
+  z-index: 10;
+  box-shadow: 0 6px 26px rgba(0,0,0,.08);
+  background-color: rgba(255, 255, 255, 0);
+}
+.header-bg{
+  /* background-color: white; */
+  transition: .3s;
+}
+.nav-menu{
+  display: flex;
+  list-style-type: none;
+}
+.nav-menu li{
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+.nav-menu li:hover{
+  margin: 0.1em 0;
+  text-decoration-color: var(--pink);
+  text-decoration: underline;
+}
+
+.nav-logo{
+  color: SandyBrown;
+  font-size: 1.5rem;
+  cursor: pointer;
+  letter-spacing: 5px;
+  text-shadow: 0.02em 0.02em 0 Brown, 0 0 0.5em violet;
+  text-transform: uppercase;
+}
+.nav-menu li a{
+  font-size: 1.2rem;
+  font-weight: var(--font-medium);
+  color: white;
+}
+.nav-menu li a:hover{
+  font-size: 1.2rem;
+  font-weight: var(--font-medium);
+  color: var(--pink);
+}
+.toggler {
+  display: none;
+}
+
+@media (max-width:1075px){
+  .nav-menu {
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      width: 80%;
+      height: 100vh;
+      background:white;
+      box-shadow: 0 6px 26px rgba(0,0,0,.08);
+      position: absolute;
+      top: 0px;
+      left: -100%;
+      /* z-index: -3; */
+      transition: .3s;
+  }
+
+  .nav-menu.active{
+      left: 0;
+  }
+  .nav-menu li{
+      padding: 1rem 0;
+      margin-left: 25px;
+
+  }
+  .nav-menu li a{
+      font-size: 1.2rem;
+      color: #071e3d;
+  }
+  .nav-menu li a:hover{
+    font-size: 1.2rem;
+    color:#ff1f5a;
+}
+  .toggler {
+      display: initial;
+  }
+}
+
+
+/*  */
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: red;
+  transform-origin: 0%;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: var(--accent);
+}

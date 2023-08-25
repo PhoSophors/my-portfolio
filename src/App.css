@@ -1,0 +1,9 @@
+
+:root {
+  --font-fam: "Plus Jakarta Sans", sans-serif;
+}
+
+.dark {
+  width: auto;
+  height: 100lvh;
+}
