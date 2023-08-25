@@ -1,7 +1,7 @@
 import React from "react";
 import "../assets/css/homeStyle.css";
 import Project from "../views/Project";
-import HeroImg from "./Heroimg";
+import HeroImg from "./Hero";
 import Scrolltop from "../components/ScrollTop";
 import Expertise from "./Expertise";
 import Contact from "./Contact";

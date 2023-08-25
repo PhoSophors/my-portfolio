@@ -21,7 +21,6 @@ function Project() {
               <br />
               {/* grid 1 */}
               <div class="grid grid-cols-1 lg:grid-cols-3 gap-1 ">
-
                 <motion.div
                   className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
                   initial={{ opacity: 0, scale: 0.5 }}
@@ -33,10 +32,9 @@ function Project() {
                       type: "spring",
                       damping: 5,
                       stiffness: 100,
-                      restDelta: 0.001
-                    }
+                      restDelta: 0.001,
+                    },
                   }}
-
                 >
                   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://the-travels.vercel.app/" target="blank">
@@ -96,8 +94,8 @@ function Project() {
                       type: "spring",
                       damping: 5,
                       stiffness: 100,
-                      restDelta: 0.001
-                    }
+                      restDelta: 0.001,
+                    },
                   }}
                 >
                   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -158,8 +156,8 @@ function Project() {
                       type: "spring",
                       damping: 5,
                       stiffness: 100,
-                      restDelta: 0.001
-                    }
+                      restDelta: 0.001,
+                    },
                   }}
                 >
                   <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

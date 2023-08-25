@@ -2,27 +2,27 @@ import React from "react";
 import ".././assets/css/expertiseStyle.css";
 import { motion } from "framer-motion";
 
-import { useRef } from "react";
-import { useInView } from "framer-motion";
+// import { useRef } from "react";
+// import { useInView } from "framer-motion";
 
-function Section({ children }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+// function Section({ children }) {
+//   const ref = useRef(null);
+//   const isInView = useInView(ref, { once: true });
 
-  return (
-    <section ref={ref}>
-      <span
-        style={{
-          transform: isInView ? "none" : "translateY(-500px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        {children}
-      </span>
-    </section>
-  );
-}
+//   return (
+//     <section ref={ref}>
+//       <span
+//         style={{
+//           transform: isInView ? "none" : "translateY(-500px)",
+//           opacity: isInView ? 1 : 0,
+//           transition: "all 3s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+//         }}
+//       >
+//         {children}
+//       </span>
+//     </section>
+//   );
+// }
 
 export default function Expertise() {
   return (
@@ -58,7 +58,9 @@ export default function Expertise() {
 
                 <motion.div
                   whileHover={{ scale: [null, 1.1, 1.1] }}
-                  transition={{ duration: 0.3 }} className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-cyan-700">
+                  transition={{ duration: 0.3 }}
+                  className=" p-6  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-cyan-700"
+                >
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Frontend Dev React, VueJS
                   </h5>
@@ -72,7 +74,9 @@ export default function Expertise() {
 
                 <motion.div
                   whileHover={{ scale: [null, 1.1, 1.1] }}
-                  transition={{ duration: 0.3 }} className=" p-6 border-dashed border-2 border-sky-500 border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-fuchsia-700">
+                  transition={{ duration: 0.3 }}
+                  className=" p-6 border-dashed border-2 border-sky-500 border-gray-200 shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-fuchsia-700"
+                >
                   <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Backend Dev Laravel
                   </h5>
