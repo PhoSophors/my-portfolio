@@ -2,8 +2,8 @@ import React from "react";
 import "../assets/css/textStyle.css";
 import travel_frontend from "../assets/img/travel_frontend.png";
 import travel_official from "../assets/img/travel_official.png";
-import '../assets/css/reveal.css';
-import '../components/Reveal';
+import "../assets/css/reveal.css";
+import "../components/Reveal";
 import library from "../assets/img/library_ofiicial.png";
 import { motion } from "framer-motion";
 
@@ -40,7 +40,11 @@ function Project() {
                 >
                   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://the-travels.vercel.app/" target="blank">
-                      <img className="rounded-lg" src={travel_frontend} alt="" />
+                      <img
+                        className="rounded-lg"
+                        src={travel_frontend}
+                        alt=""
+                      />
                     </a>
                     <div class="p-5">
                       <a href="https://the-travels.vercel.app/" target="blank">
@@ -58,7 +62,7 @@ function Project() {
                       <a
                         href="https://the-travels.vercel.app/"
                         target="blank"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-700 dark:hover:bg-pink-700 dark:focus:ring-blue-800"
                       >
                         See more
                         <svg
@@ -98,7 +102,11 @@ function Project() {
                 >
                   <div class=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://cam-travel.store/" target="blank">
-                      <img className="rounded-lg" src={travel_official} alt="" />
+                      <img
+                        className="rounded-lg"
+                        src={travel_official}
+                        alt=""
+                      />
                     </a>
                     <div class="p-5">
                       <a href="https://cam-travel.store/" target="blank">
@@ -116,7 +124,7 @@ function Project() {
                       <a
                         href="https://cam-travel.store/"
                         target="blank"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-700 dark:hover:bg-pink-700 dark:focus:ring-blue-800"
                       >
                         See more
                         <svg
@@ -179,7 +187,7 @@ function Project() {
                       <a
                         href="https://cam-library-official.vercel.app/"
                         target="blank"
-                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-cyan-700 rounded-lg hover:bg-cyan-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:bg-cyan-700 dark:hover:bg-pink-700 dark:focus:ring-blue-800"
                       >
                         See more
                         <svg
