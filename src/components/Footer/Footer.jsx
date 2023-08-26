@@ -15,22 +15,3 @@ function Footer () {
 }
 
 export default Footer;
-
-// import { Logo } from "./Logo";
-
-// export function Footer({ title = "" }) {
-//   return (
-//     <footer>
-//       <a
-//         href="https://www.framer.com/docs/scroll-animations/"
-//         target="_blank"
-//         rel="noreferrer"
-        
-//       >
-//          <span class="text-sm text-gray-500 sm:text-center text-center dark:text-gray-400">© 2023 <a href="#" class="hover:underline text-white">PHO SOPHORS™</a>. All Rights Reserved.
-//         </span>
-
-//       </a>
-//     </footer>
-//   );
-// }

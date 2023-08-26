@@ -5,7 +5,6 @@ import "../Navbar/navbarStyle.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
-
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
@@ -19,10 +18,8 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeColor);
 
-
   return (
     <>
-    
       <div className={color ? "header header-bg" : "header"}>
         <Link to="heroimg">
           <span className="nav-logo">SoPhors ._.</span>
@@ -77,11 +74,12 @@ const Navbar = () => {
 
         <div className="toggler" onClick={handleClick}>
           {click ? (
-            <FaTimes size={20} style={{ color: "white" }} />
+            <FaTimes size={20} style={{ color: "#fff" }} />
           ) : (
-            <FaBars size={20} style={{ color: "white" }} />
+            <FaBars size={20} style={{ color: "#fff" }} />
           )}
         </div>
+        
       </div>
       <Outlet />
     </>
