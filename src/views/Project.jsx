@@ -1,5 +1,5 @@
 import React from "react";
-import "../assets/css/projectStyle.css";
+import "../assets/css/textStyle.css";
 import travel_frontend from "../assets/img/travel_frontend.png";
 import travel_official from "../assets/img/travel_official.png";
 import '../assets/css/reveal.css';
@@ -24,7 +24,7 @@ function Project() {
               {/* grid 1 */}
               <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
                 <motion.div
-                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-amber-300"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -82,7 +82,7 @@ function Project() {
                 </motion.div>
 
                 <motion.div
-                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-pink-700"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{
@@ -140,7 +140,7 @@ function Project() {
                 </motion.div>
 
                 <motion.div
-                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-yellow-700"
+                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-green-300"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{

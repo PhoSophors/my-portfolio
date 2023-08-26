@@ -1,21 +1,23 @@
 import React from "react";
-import '../assets/css/reveal.css';
-import '../components/Reveal';
+import "../assets/css/reveal.css";
+import "../components/Reveal";
 
 const Contact = () => {
-
   return (
     <>
-      <div id="contact">
+      <div id="contact" className="my-contact">
         <section class="bg-white dark:bg-gray-900">
           <div class=" py-1 px-4 xl:h-screen md:h-full sm:h-full flex items-center mx-auto max-w-screen-xl lg:grid  lg:py-1 lg:px-6">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <h2 class="mb-4 mt-10 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
+              <br />
+              <br />
+              <h2 class="mb-4 tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
                 Conact Me
               </h2>
-
+              <br />
+              <br />
               {/* grid */}
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* madia */}
                 <div class="reveal fade-left w-full  p-5 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
                   <h5 class="mb-3 text-base font-semibold text-gray-900  md:text-xl dark:text-white">

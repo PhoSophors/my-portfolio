@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-scroll";
-import "../Navbar/navbarStyle.css";
+import "../assets/css/navbarStyle.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -21,13 +21,13 @@ const Navbar = () => {
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
-        <Link to="heroimg">
+        <Link to="heroimg" spy={true} smooth={true} offset={50} duration={500}>
           <span className="nav-logo">SoPhors ._.</span>
         </Link>
 
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
-            <Link
+            <Link 
               to="heroimg"
               spy={true}
               smooth={true}
@@ -37,6 +37,7 @@ const Navbar = () => {
               // 01. Home
             </Link>
           </li>
+   
           <li>
             <Link
               to="expertise"
@@ -79,7 +80,6 @@ const Navbar = () => {
             <FaBars size={20} style={{ color: "#fff" }} />
           )}
         </div>
-        
       </div>
       <Outlet />
     </>

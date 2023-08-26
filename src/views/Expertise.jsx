@@ -1,5 +1,4 @@
 import React from "react";
-import ".././assets/css/expertiseStyle.css";
 import '../assets/css/reveal.css';
 import '../components/Reveal';
 import { motion } from "framer-motion";
@@ -7,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Expertise() {
   return (
     <>
-      <div id="expertise">
+      <div id="expertise" className="my-expertise">
         <section class="bg-white dark:bg-gray-900">
           <div class=" py-1 px-4 xl:h-screen md:h-full sm:h-full flex items-center mx-auto max-w-screen-xl lg:grid  lg:py-1 ">
             <div class="font-light text-gray-500 sm:text-lg dark:text-gray-400">

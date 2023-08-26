@@ -39,6 +39,7 @@ span {
     rgba(0, 0, 0, 0) 1px,
     var(--background) 1px
   );
+
   background-size: 4px 4px;
   backdrop-filter: blur(3px);
   font-size: 14px;
@@ -72,6 +73,7 @@ span {
 .nav-menu{
   display: flex;
   list-style-type: none;
+  cursor: pointer;
 }
 .nav-menu li{
   padding: 0 1rem;
@@ -87,11 +89,14 @@ span {
   text-transform: uppercase;
 }
 .nav-menu li a{
+  cursor: pointer;
   font-size: 1.2rem;
   font-weight: var(--font-medium);
   color: var(--sky);
+
 }
 .nav-menu li a:hover{
+  cursor: pointer;
   font-size: 1.2rem;
   font-weight: var(--font-medium);
   color: var(--pink);

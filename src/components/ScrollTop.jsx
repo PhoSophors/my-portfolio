@@ -24,12 +24,15 @@ export default function Scrolltop() {
       mybutton.style.display = "none";
     }
   }
-
-  /** Function back to top */
+    /** Function back to top */
   function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
   }
+
+
   /** End Function back to top */
 
   return (

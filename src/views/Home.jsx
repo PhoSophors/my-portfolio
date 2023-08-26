@@ -1,14 +1,13 @@
 import React from "react";
-import "../assets/css/homeStyle.css";
+import { motion, useScroll, useSpring } from "framer-motion";
+
+import AnimatCursor from "../components/AnimatCursor"; // im oport AnimatedCursor from reactAnimatCursor
 import Project from "../views/Project";
 import HeroImg from "./Hero";
 import Scrolltop from "../components/ScrollTop";
 import Expertise from "./Expertise";
 import Contact from "./Contact";
-import Footer from "../components/Footer/Footer";
-import { motion, useScroll, useSpring } from "framer-motion";
-import '../assets/css/CursorCuztomize.css';
-
+import Footer from "../components/Footer";
 
 
 const Home = () => {
@@ -19,26 +18,9 @@ const Home = () => {
     restDelta: 0.001,
   });
 
-
-  // set cursor pointer customize 
-  const cursor = document.querySelector('.cursor');
-
-  document.addEventListener('mousemove', e => {
-      cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-  });
-  
-  document.addEventListener('click', e => {
-      cursor.classList.add("expand");
-      setTimeout(() => {
-          cursor.classList.remove("expand");
-      }, 500);
-  });
-  //
-
   return (
     <>
-     <div class="cursor"/>
-     
+     <AnimatCursor/>
       <motion.div className="progress-bar" style={{ scaleX }} />
 
       <HeroImg />
