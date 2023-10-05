@@ -6,7 +6,7 @@ import Home from "../views/Home";
 import Project from "../views/Project";
 import Contact from "../views/Contact";
 import Hero from "../views/Hero";
-import Expertise from "../views/Expertise";
+import Skill from "../views/Skill";
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="project" element={<Project />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="expertise" element={<Expertise />} />
+          <Route path="skill" element={<Skill />} />
           <Route path="hero" element={<Hero />} />
         </Route>
       </Routes>

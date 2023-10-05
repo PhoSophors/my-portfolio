@@ -5,9 +5,9 @@ import AnimatCursor from "../components/AnimatCursor"; // im oport AnimatedCurso
 import Project from "../views/Project";
 import HeroImg from "./Hero";
 import Scrolltop from "../components/ScrollTop";
-import Expertise from "./Expertise";
 import Contact from "./Contact";
 import Footer from "../components/Footer";
+import Skill from "./Skill";
 
 
 const Home = () => {
@@ -24,7 +24,7 @@ const Home = () => {
       <motion.div className="progress-bar" style={{ scaleX }} />
 
       <HeroImg />
-      <Expertise />
+      <Skill />
       <Project />
       <Contact />
       <Footer />

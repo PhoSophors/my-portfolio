@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-scroll";
 import "../assets/css/navbarStyle.css";
@@ -21,23 +21,16 @@ const Navbar = () => {
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
-        <Link to="heroimg" spy={true} smooth={true} offset={50} duration={500}>
-          <span className="nav-logo">SoPhors ._.</span>
+        <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
+          <a href="/" className="logo">
+            <span className="grey-color"> &lt;</span>
+            <span className="logo-name">
+              <>SOPhors._.</>
+            </span>
+            <span className="grey-color">/&gt;</span>
+          </a>
         </Link>
-
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li>
-            <Link 
-              to="heroimg"
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-            >
-              // 01. Home
-            </Link>
-          </li>
-   
           <li>
             <Link
               to="expertise"
@@ -46,7 +39,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              // 02. Expertise
+              01. Skill
             </Link>
           </li>
           <li>
@@ -57,7 +50,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              // 03. Project
+              03. Project
             </Link>
           </li>
           <li>
@@ -68,7 +61,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              // 04. Contact
+              04. Contact
             </Link>
           </li>
         </ul>

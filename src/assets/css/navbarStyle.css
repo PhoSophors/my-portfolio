@@ -1,25 +1,26 @@
 body {
-  --black: #000000;
-  --ash-black: #222;
-  --white: #fafafa;
-  --sky: #00ccff;
-  --green: #22dddd;
-  --blue: #1300ff;
-  --dusk: #6600ff;
-  --purple: #9900ff;
-  --pink: #ff0066;
-  --red: #fe0222;
-  --orange: #fd7702;
-  --yellow: #ffbb00;
-  --background: #061323;
-  --accent: var(--pink);
+  --Sailing: #326789;
+  --Sailing01: ##78A6C8;
+  --white: #E9EEF2;
+  --orange: #E65C4F;
+  --nav: #3c9fb5c4;
+  
 }
-
+.logo-name{
+  font-family: 'Chewy', cursive;
+}
 
 span {
-  font-family: var(--font-fam);
   font-size: 1.5rem;
 }
+.logo-name {
+  font-family: 'Satisfy', cursive; 
+    font-variant-ligatures: no-common-ligatures;
+    -webkit-font-variant-ligatures: no-common-ligatures;
+    padding: 0 10px;
+    color: var(--orange);
+}
+
 .header{    
   display: flex;
   justify-content: space-between;
@@ -35,13 +36,8 @@ span {
 
 .header {
   padding: 20px;
-  background-image: radial-gradient(
-    rgba(0, 0, 0, 0) 1px,
-    var(--background) 1px
-  );
-
-  background-size: 4px 4px;
-  backdrop-filter: blur(3px);
+  background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
+  backdrop-filter: blur(5px);
   font-size: 14px;
   line-height: 14px;
 }
@@ -50,13 +46,13 @@ span {
   display: block;
   content: "";
   position: absolute;
-  background: var(--accent);
+  background: var(--nav);
   opacity: 0.2;
 }
 
 
 .header-bg{
-  background-color: #061323b6;
+  background-color: #06132320;
   transition: .3s;
 }
 
@@ -66,7 +62,7 @@ span {
   left: 0;
   right: 0;
   height: 5px;
-  background: var(--pink);
+  background: var(--orange);
   transform-origin: 0%;
 }
 
@@ -80,26 +76,22 @@ span {
   cursor: pointer;
 }
 
-.nav-logo{
-  color: SandyBrown;
-  font-size: 1.5rem;
-  cursor: pointer;
-  letter-spacing: 5px;
-  text-shadow: 0.02em 0.02em 0 Brown, 0 0 0.5em violet;
-  text-transform: uppercase;
+
+.grey-color{
+  color: var(--orange);
 }
+
 .nav-menu li a{
   cursor: pointer;
   font-size: 1.2rem;
-  font-weight: var(--font-medium);
-  color: var(--sky);
+
+  color: var(--orange);
 
 }
 .nav-menu li a:hover{
   cursor: pointer;
   font-size: 1.2rem;
-  font-weight: var(--font-medium);
-  color: var(--pink);
+  color: var(--white);
 }
 .toggler {
   display: none;
@@ -108,19 +100,15 @@ span {
 @media (max-width:1075px){
   .nav-menu {
       flex-direction: column;
-      /* justify-content: center; */
-      /* align-items: center; */
       width: 80%;
       height: 100vh;
-      background: var(--ash-black);
-      box-shadow: 0 6px 26px rgba(0, 0, 0, 0);
+      background: black;
+      box-shadow: 0 6px 26px rgba(0, 0, 0, 0.507);
       position: absolute;
       top: 0px;
       left: -100%;
-      /* z-index: -3; */
       transition: .3s;
-      /* background-color: #061323f0; */
-      background-color: #6f757baa;
+      background-color: rgba(21, 45, 56, 0.892);
   }
 
   .nav-menu  {
@@ -139,7 +127,7 @@ span {
     display: block;
     content: "";
     position: absolute;
-    background: var(--accent);
+    background: var(--Sailing);
     opacity: 0.2;
   }
 
@@ -158,11 +146,11 @@ span {
   }
   .nav-menu li a:hover{
     font-size: 1.2rem;
-    color: var(--pink);
+    color: var(--Sailing);
 }
   .toggler {
     display: block ;
-    /* background-color: var(--pink); */
+    color: var(--Sailing);
   }
 }
 /*  */
@@ -172,7 +160,7 @@ span {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: var(--accent);
+  background: var(--white);
 }
 
 /*  */
