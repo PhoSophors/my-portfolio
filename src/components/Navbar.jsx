@@ -22,13 +22,13 @@ const Navbar = () => {
     <>
       <div className={color ? "header header-bg" : "header"}>
         <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
-          <a href="/" className="logo">
+          <div href="/" className="logo">
             <span className="grey-color"> &lt;</span>
             <span className="logo-name">
               <>Pho Sophors._.</>
             </span>
             <span className="grey-color">/&gt;</span>
-          </a>
+          </div>
         </Link>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>

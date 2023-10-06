@@ -14,12 +14,12 @@ import { useLocalStorage } from "../hook/useLocalStorage";
 import Navbar from "../components/Navbar";
 
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-  const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
-    damping: 30,
-    restDelta: 0.001,
-  });
+  // const { scrollYProgress } = useScroll();
+  // const scaleX = useSpring(scrollYProgress, {
+  //   stiffness: 100,
+  //   damping: 30,
+  //   restDelta: 0.001,
+  // });
 
   // loading
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -52,7 +52,7 @@ const Home = () => {
           <>
             <AnimatCursor />
 
-            <motion.div className="progress-bar" style={{ scaleX }} />
+            {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
             <Navbar />
             <HeroImg />
             <Skill />
