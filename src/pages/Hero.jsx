@@ -1,9 +1,10 @@
 import "../assets/css/reveal.css";
 import "../components/Reveal";
+import "../assets/css/hero.css";
 import animation_hero from "../assets/lottie/animation_hero.json";
 import Lottie from "lottie-react";
-import "../assets/css/hero.css";
 import { Button } from "flowbite-react";
+import { greeting } from "../assets/data/data";
 
 const Hero = () => {
   return (
@@ -14,23 +15,17 @@ const Hero = () => {
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 flex items-center  ">
             {/* intro */}
             <div className=" fade-left w-full p-5 sm:p-6 items-center mx-auto">
-              <h1 className="intro">Hi all, I'm Phors 👋</h1>
-              <span className="descrip">
-                A passionate Full Stack Software Developer 🚀 having an
-                experience of building Web and Mobile applications with
-                JavaScript / Reactjs / Nodejs / React Native and some other cool
-                libraries and frameworks.
-              </span>
+              <h1 className="intro">{greeting.title}</h1>
+              <span className="descrip">{greeting.subTitle}</span>
               {/* media */}
               <div className="media flex flex-wrap gap-2">
                 {/* github */}
                 <a
-                  href="https://github.com/PhoSophors"
+                  href={greeting.github}
                   target="blank"
                   className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -40,12 +35,11 @@ const Hero = () => {
                 </a>
                 {/* Linkedin */}
                 <a
-                  href="https://www.linkedin.com/in/pho-sophors-241b84223/"
+                  href={greeting.linkedin}
                   target="blank"
                   className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <svg
-                    xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5"
                     fill="currentColor"
                     viewBox="0 0 24 24"
@@ -54,9 +48,9 @@ const Hero = () => {
                   </svg>
                 </a>
                 <a
-                  href="https://t.me/Pho_SoPhors"
+                  href={greeting.telegram}
                   target="blank"
-                  className="flex items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
+                  className="flex  items-center p-3 text-base font-bold text-gray-900 rounded-lg bg-gray-50 hover:bg-gray-100 group hover:shadow dark:bg-gray-600 dark:hover:bg-gray-500 dark:text-white"
                 >
                   <svg
                     className="h-5 w-5"

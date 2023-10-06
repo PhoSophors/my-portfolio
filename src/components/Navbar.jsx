@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="/" className="logo">
             <span className="grey-color"> &lt;</span>
             <span className="logo-name">
-              <>SOPhors._.</>
+              <>Pho Sophors._.</>
             </span>
             <span className="grey-color">/&gt;</span>
           </a>
@@ -33,7 +33,7 @@ const Navbar = () => {
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li>
             <Link
-              to="expertise"
+              to="skill"
               spy={true}
               smooth={true}
               offset={50}
@@ -50,7 +50,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              03. Project
+              02. Project
             </Link>
           </li>
           <li>
@@ -61,7 +61,7 @@ const Navbar = () => {
               offset={50}
               duration={500}
             >
-              04. Contact
+              03. Contact
             </Link>
           </li>
         </ul>

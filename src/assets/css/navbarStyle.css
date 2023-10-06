@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/agustina');
+
 body {
   --Sailing: #326789;
   --Sailing01: ##78A6C8;
@@ -6,19 +8,21 @@ body {
   --nav: #3c9fb5c4;
   
 }
-.logo-name{
-  font-family: 'Chewy', cursive;
-}
-
 span {
   font-size: 1.5rem;
 }
-.logo-name {
-  font-family: 'Satisfy', cursive; 
-    font-variant-ligatures: no-common-ligatures;
-    -webkit-font-variant-ligatures: no-common-ligatures;
-    padding: 0 10px;
-    color: var(--orange);
+
+.header .logo-name {
+  font-family: 'Agustina', sans-serif;
+  font-weight: bold;
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+  color: var(--orange);
+}
+
+.grey-color{
+  color: var(--white);
 }
 
 .header{    
@@ -77,9 +81,6 @@ span {
 }
 
 
-.grey-color{
-  color: var(--orange);
-}
 
 .nav-menu li a{
   cursor: pointer;

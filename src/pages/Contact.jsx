@@ -11,7 +11,7 @@ const Contact = () => {
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
               <br />
               <br />
-              <h2 className="mb-4 tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
+              <h2 className="intro mb-4 tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
                 Conact Me
               </h2>
               <br />
@@ -20,7 +20,7 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 {/* madia */}
                 <div className="reveal fade-left w-full  p-5 bg-white border border-gray-200 rounded-lg shadow sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-                  <h5 className="mb-3 text-base font-semibold text-gray-900  md:text-xl dark:text-white">
+                  <h5 className=" intro mb-3 text-base font-semibold text-gray-900  md:text-xl dark:text-white">
                     Contact Me
                   </h5>
                   <p className="text-sm font-normal text-gray-500 dark:text-gray-400">
@@ -40,9 +40,6 @@ const Contact = () => {
                           viewBox="0 0 24 24"
                           version="1.1"
                           xmlns="http://www.w3.org/2000/svg"
-                          xmlns:xlink="http://www.w3.org/1999/xlink"
-                          xml:space="preserve"
-                          xmlns:serif="http://www.serif.com/"
                         >
                           <path
                             id="telegram-1"
@@ -163,7 +160,7 @@ const Contact = () => {
                   <div className=" items-center justify-center mx-auto  gap-16 py-1 px-4 ">
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                       {/* <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">01. About Me</h2> */}
-                      <p className="mb-4">
+                      <p className="mb-4 ">
                         Hello! My name is Sophors and I enjoy creating things
                         that live on the internet. My interest in web
                         development started back in 2020 when I decided to try

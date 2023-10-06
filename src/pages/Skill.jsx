@@ -1,35 +1,36 @@
 import animation_skills from "../assets/lottie/animation_skills.json";
 import Lottie from "lottie-react";
 import "../assets/css/skill.css";
-import { programming, frameworks, database } from "../assets/data/data";
+import { frameworks, database, programming } from "../assets/data/data";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-
+import { skillsSection } from "../assets/data/data";
+// import SoftwareSkill from "./SoftwareSkill";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 function Skill() {
   return (
     <>
-      <section className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center ">
+      <section id="skill" className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center ">
+
         <div className="p-5">
           <div className="xl:p-10">
             <Lottie animationData={animation_skills} />
           </div>
+   
 
           <span className="descrip xl:p-10">
-            🧑‍💻 Develop highly interactive Front end / User Interfaces for your
-            web and mobile applications <br />
-            🧑‍💻 Progressive Web Applications ( PWA ) in normal and SPA Stacks{" "}
-            <br />
-            🧑‍💻 Integration of third party services such as Firebase/ AWS /
-            Digital Ocean
+            {skillsSection.subTitle}
           </span>
         </div>
 
         <div className=" fade-left w-full p-5 sm:p-6 items-center mx-auto">
-          <h1 className="skill-intro">What I do!</h1>
+          <h1 className="skill-intro">{skillsSection.title}</h1>
 
           <span className="descrip">Programming</span>
           <div className="w-full">
             <div className="mx-auto flex ">
-              <div className="grid grid-cols-3 lg:grid-cols-8 gap-1">
+              {/* <SoftwareSkill/> */}
+              <div className="grid grid-cols-3 lg:grid-cols-7 gap-1">
                 {programming.map((item) => {
                   return (
                     <>

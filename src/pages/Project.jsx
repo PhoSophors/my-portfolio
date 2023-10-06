@@ -16,7 +16,7 @@ function Project() {
             <div className="font-light content-center text-gray-500 sm:text-lg dark:text-gray-400">
               <br />
               <br />
-              <h2 className="mb-4 tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
+              <h2 className="mb-4 intro tracking-tight text-center font-extrabold text-gray-900 dark:text-white">
                 My Work
               </h2>
               <br />
