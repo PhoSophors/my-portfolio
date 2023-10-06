@@ -1,26 +1,25 @@
+import React from "react";
 import animation_skills from "../assets/lottie/animation_skills.json";
 import Lottie from "lottie-react";
 import "../assets/css/skill.css";
 import { frameworks, database, programming } from "../assets/data/data";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
 import { skillsSection } from "../assets/data/data";
-// import SoftwareSkill from "./SoftwareSkill";
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-function Skill() {
+
+const Skill = () => {
   return (
     <>
-      <section id="skill" className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center ">
-
+      <section
+        id="skill"
+        className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center "
+      >
         <div className="p-5">
           <div className="xl:p-10">
             <Lottie animationData={animation_skills} />
           </div>
-   
-
-          <span className="descrip xl:p-10">
-            {skillsSection.subTitle}
-          </span>
+          <span className="descrip xl:p-10">{skillsSection.subTitle}</span>
+          <span className="descrip xl:p-10"> {skillsSection.skills}</span>
+     
         </div>
 
         <div className=" fade-left w-full p-5 sm:p-6 items-center mx-auto">
@@ -29,14 +28,13 @@ function Skill() {
           <span className="descrip">Programming</span>
           <div className="w-full">
             <div className="mx-auto flex ">
-              {/* <SoftwareSkill/> */}
               <div className="grid grid-cols-3 lg:grid-cols-7 gap-1">
                 {programming.map((item) => {
                   return (
                     <>
                       <Card
                         className="flex items-center"
-                        key={item.id}
+                        key={item}
                         item={item}
                       >
                         <img
@@ -123,6 +121,6 @@ function Skill() {
       </section>
     </>
   );
-}
+};
 
 export default Skill;

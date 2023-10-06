@@ -1,4 +1,5 @@
-import "../assets/css/SplashScreen.css";
+// import "../assets/css/SplashScreen.css";
+import "../../src/assets/css/SplashScreen.css"
 import DisplayLottie from "./DisplayLottie";
 import {splashScreen} from "../assets/data/data";
 

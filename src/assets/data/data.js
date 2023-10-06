@@ -393,7 +393,8 @@ export {
 };
 
 export const programming = [
-    {   id: 1,
+    {   
+      id: 1,
         img: "https://dl.dropboxusercontent.com/scl/fi/uzhd4mw3das6j3c32dm16/icons8-html-logo-96.png?rlkey=mb5w6955q30a6bs7pcad8qka1&dl=0",
         title: "HTML 5",
         percentage: "90%",    
