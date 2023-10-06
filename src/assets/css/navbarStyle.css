@@ -18,7 +18,17 @@ span {
   font-variant-ligatures: no-common-ligatures;
   -webkit-font-variant-ligatures: no-common-ligatures;
   padding: 0 10px;
-  color: var(--orange);
+  background-image: linear-gradient(
+    -225deg,
+    #1fd1cb 0%,
+    #c54fad 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-clip: border-box;
+  color: #fff;
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
 }
 
 .grey-color{
