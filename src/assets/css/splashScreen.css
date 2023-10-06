@@ -11,9 +11,6 @@ body {
   min-height: 100vh;
 }
 
-.splash-animation-container {
-  height: 30vh;
-}
 .splash-title-container {
   font-size: 3rem;
   text-decoration: none;

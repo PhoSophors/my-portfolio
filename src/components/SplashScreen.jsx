@@ -1,12 +1,12 @@
 import DisplayLottie from "./DisplayLottie";
 import {splashScreen} from "../assets/data/data";
-// import "../../src/assets/css/SplashScreen.css"
+import "../assets/css/splashScreen.css"
 
 export default function SplashScreen() {
 
   return (
     <div className= "splash-container">
-      <div className="splash-animation-container">
+      <div>
         <DisplayLottie animationData={splashScreen.animation} />
       </div>
       <div className="splash-title-container">
