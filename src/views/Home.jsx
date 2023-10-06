@@ -1,4 +1,4 @@
-import { motion, useScroll, useSpring } from "framer-motion";
+
 import { useState, useEffect } from "react";
 import AnimatCursor from "../components/AnimatCursor"; // im oport AnimatedCursor from reactAnimatCursor
 import Project from "../pages/Project";
@@ -10,8 +10,10 @@ import Skill from "../pages/Skill";
 import { StyleProvider } from "../contexts/StyleContext";
 import SplashScreen from "../components/SplashScreen";
 import { splashScreen } from "../assets/data/data";
-import { useLocalStorage } from "../hook/useLocalStorage";
+// import { useLocalStorage } from "../hook/useLocalStorage";
 import Navbar from "../components/Navbar";
+
+
 
 const Home = () => {
   // const { scrollYProgress } = useScroll();
@@ -22,10 +24,10 @@ const Home = () => {
   // });
 
   // loading
-  const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
-  const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
-  const [isShowingSplashAnimation, setIsShowingSplashAnimation] =
-    useState(true);
+  // const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
+  // const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
+
+  const [isShowingSplashAnimation, setIsShowingSplashAnimation] = useState(true);
 
   useEffect(() => {
     if (splashScreen.enabled) {
@@ -39,13 +41,13 @@ const Home = () => {
     }
   }, []);
 
-  const changeTheme = () => {
-    setIsDark(!isDark);
-  };
+  // const changeTheme = () => {
+  //   setIsDark(!isDark);
+  // };
 
   return (
-    <div className={isDark ? "dark-mode" : null}>
-      <StyleProvider value={{ isDark: isDark, changeTheme: changeTheme }}>
+    <div>
+      <StyleProvider>
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (

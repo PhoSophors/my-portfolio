@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Merriweather:wght@300&family=Noto+Sans+Khmer:wght@100;400&family=Poppins:wght@100&family=Satisfy&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Merriweather:wght@300&family=Noto+Sans+Khmer:wght@100;400&family=Poppins:wght@100&family=Satisfy&display=swap'); */
 
 :root {
   background: linear-gradient(to right, rgb(15, 32, 39), rgb(32, 58, 67), rgb(44, 83, 100));
