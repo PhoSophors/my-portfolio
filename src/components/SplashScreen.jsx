@@ -1,8 +1,6 @@
-// import "../assets/css/SplashScreen.css";
-import "../../src/assets/css/SplashScreen.css"
 import DisplayLottie from "./DisplayLottie";
 import {splashScreen} from "../assets/data/data";
-
+// import "../../src/assets/css/SplashScreen.css"
 
 export default function SplashScreen() {
 
