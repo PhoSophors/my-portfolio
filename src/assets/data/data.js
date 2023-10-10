@@ -75,8 +75,10 @@ programming : [
     skillName: "C++",
     percentage: "60%"
   },
- 
-
+  {
+    skillName: "Kotlin",
+    percentage: "60%"
+  },
 ],
 
 framework : [
