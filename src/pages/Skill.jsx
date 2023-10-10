@@ -1,9 +1,6 @@
-import React from "react";
 import animation_skills from "../assets/lottie/animation_skills.json";
 import Lottie from "lottie-react";
 import "../assets/css/skill.css";
-import { frameworks, database, programming } from "../assets/data/data";
-import { Card, CardBody, Typography } from "@material-tailwind/react";
 import { skillsSection } from "../assets/data/data";
 
 const Skill = () => {
@@ -11,112 +8,93 @@ const Skill = () => {
     <>
       <section
         id="skill"
-        className="flex flex-col-reverse md:flex-row gap-10 items-center justify-center "
+        className="reveal fade-bottom flex max-w-screen-2xl mx-auto p-5 xl:h-screen md:h-full sm:h-full flex-col-reverse xl:flex-row gap-0 items-center justify-center "
       >
-        <div className="p-5">
-          <div className="xl:p-10">
+        <div className="fade-left reveal  p-5 sm:p-6">
             <Lottie animationData={animation_skills} />
-          </div>
-          <span className="descrip xl:p-10">{skillsSection.subTitle}</span>
-          <span className="descrip xl:p-10"> {skillsSection.skills}</span>
-     
         </div>
 
-        <div className=" fade-left w-full p-5 sm:p-6 items-center mx-auto">
-          <h1 className="skill-intro">{skillsSection.title}</h1>
+        <div className="mx:w-full items-center mx-auto">
+          {/* title and subtitle */}
+          <h1 className="skill-intro text-center ">{skillsSection.title}</h1>
+          <span className="subTitle dark:text-gray-400 text-center reveal fade-left ">{skillsSection.subTitle}</span>
 
-          <span className="descrip">Programming</span>
-          <div className="w-full">
-            <div className="mx-auto flex ">
-              <div className="grid grid-cols-3 lg:grid-cols-7 gap-1">
-                {programming.map((item) => {
-                  return (
-                    <>
-                      <Card
-                        className="flex items-center"
-                        key={item}
-                        item={item}
+          {/* programming languages section*/}
+          <section className="reveal fade-left ">
+            <span className="descrip text-center">+ Programming</span>
+            <div className="w-full flex md:justify-center">
+              <div className="mx-auto flex  ">
+                <div className="felx grid grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-1">
+                  {skillsSection.programming.map((skills, i) => {
+                    return (
+                      <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                        key={i}
                       >
-                        <img
-                          className="items-center"
-                          src={item.img}
-                          alt="card-image"
-                        />
-                        <CardBody className="pt-5">
-                          <Typography color="blue-gray">
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.percentage}</Typography>
-                        </CardBody>
-                      </Card>
-                    </>
-                  );
-                })}
+                        <div className=" font-normal text-center dark:text-gray-400">
+                          {skills.skillName}
+                        </div>
+                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p>{skills.percentage}</p>
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <span className="descrip">Frameworks</span>
-          <div className="w-full">
-            <div className="mx-auto flex ">
-              <div className="grid grid-cols-3 lg:grid-cols-7 gap-1">
-                {frameworks.map((item) => {
-                  return (
-                    <>
-                      <Card
-                        className="flex items-center"
-                        key={item.id}
-                        item={item}
+          {/* framework and tool section */}
+          <section className="reveal fade-right ">
+            <span className="descrip text-center">+ Framework & Style</span>
+            <div className="w-full flex  md:justify-center">
+              <div className="mx-auto flex ">
+                <div className="grid grid-cols-3  md:grid-cols-4 lg:grid-cols-6 gap-1">
+                  {skillsSection.framework.map((skills, i) => {
+                    return (
+                      <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                        key={i}
                       >
-                        <img
-                          className="items-center"
-                          src={item.img}
-                          alt="card-image"
-                        />
-                        <CardBody className="pt-5">
-                          <Typography color="blue-gray">
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.percentage}</Typography>
-                        </CardBody>
-                      </Card>
-                    </>
-                  );
-                })}
+                        <div className=" font-normal text-center tp dark:text-gray-400">
+                          {skills.skillName}
+                        </div>
+                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p>{skills.percentage}</p>
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          </section>
 
-          <span className="descrip">Database</span>
-          <div className="w-full">
-            <div className="mx-auto flex ">
-              <div className="grid grid-cols-2 lg:grid-cols-3 flex items-center gap-1">
-                {database.map((item) => {
-                  return (
-                    <>
-                      <Card
-                        className="flex items-center"
-                        key={item.id}
-                        item={item}
+          {/* database and tool section*/}
+          <section className="reveal fade-bottom ">
+            <span className="descrip text-center">+ Database & Tool</span>
+            <div className="w-full flex ">
+              <div className="mx-auto flex">
+                <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-1">
+                  {skillsSection.database.map((skills, i) => {
+                    return (
+                      <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+                        key={i}
                       >
-                        <img
-                          className="items-center"
-                          src={item.img}
-                          alt="card-image"
-                        />
-                        <CardBody className="pt-5">
-                          <Typography color="blue-gray">
-                            {item.title}
-                          </Typography>
-                          <Typography>{item.percentage}</Typography>
-                        </CardBody>
-                      </Card>
-                    </>
-                  );
-                })}
+                        <div className=" font-normal text-center tp dark:text-gray-400">
+                          {skills.skillName}
+                        </div>
+                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p>{skills.percentage}</p>
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             </div>
-          </div>
+          </section>
+
+          {/* <span className="subTitle dark:text-gray-400 xl:p-10"> {skillsSection.skills}</span> */}
         </div>
       </section>
     </>

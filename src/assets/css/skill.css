@@ -31,3 +31,81 @@
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+.subTitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+
+@media (max-width: 768px)
+{
+  .skill-intro{
+    font-size: 30px;
+    line-height: normal;
+   
+  }
+  .subTitle{
+    font-size: 16px;
+    line-height: normal;
+  }
+  
+  .software {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px)
+ {
+  .skill-intro{
+    font-size: 30px;
+    line-height: normal;
+    text-align: center;
+  }
+  .subTitle{
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+  .software {
+    align-items: center;
+  }
+}
+
+@media (max-width: 1290px)
+{
+  .skill-intro{
+    line-height: normal;
+    margin-top: 100px;
+  }
+  .subTitle{
+    line-height: normal;
+    text-align: center;
+  }
+  .software {
+    justify-content: center;
+  }
+
+}
+
+@media (max-width: 1290px)
+{
+  .skill-intro{
+    line-height: normal;
+    text-align: center;
+    margin-top: 100px;
+  }
+  .subTitle{
+    line-height: normal;
+    text-align: center;
+  }
+  .software {
+    align-items: center;
+  }
+}

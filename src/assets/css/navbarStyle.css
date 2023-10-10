@@ -29,6 +29,7 @@ span {
   color: #fff;
   -webkit-text-fill-color: transparent; 
   -webkit-background-clip: text;
+  cursor: pointer;
 }
 
 .grey-color{
@@ -69,7 +70,7 @@ span {
   background-color: #06132320;
   transition: .3s;
 }
-
+/* 
 .progress-bar {
   position: fixed;
   top: 0;
@@ -78,7 +79,7 @@ span {
   height: 5px;
   background: var(--orange);
   transform-origin: 0%;
-}
+} */
 
 .nav-menu{
   display: flex;
@@ -91,13 +92,25 @@ span {
 }
 
 
-
+/*  */
 .nav-menu li a{
   cursor: pointer;
   font-size: 1.2rem;
-
-  color: var(--orange);
-
+  font-variant-ligatures: no-common-ligatures;
+  -webkit-font-variant-ligatures: no-common-ligatures;
+  padding: 0 10px;
+  background-image: linear-gradient(
+    -225deg,
+    #1fd1cb 0%,
+    #c54fad 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-clip: border-box;
+  color: #fff;
+  -webkit-text-fill-color: transparent; 
+  -webkit-background-clip: text;
+  cursor: pointer;
 }
 .nav-menu li a:hover{
   cursor: pointer;
