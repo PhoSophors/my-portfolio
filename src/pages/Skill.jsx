@@ -24,7 +24,7 @@ const Skill = () => {
             <span className="descrip text-center">+ Programming</span>
             <div className="w-full flex md:justify-center">
               <div className="mx-auto flex  ">
-                <div className="felx grid grid-cols-4 md:grid-cols-7 lg:grid-cols-7 gap-1">
+                <div className="felx grid grid-cols-4 md:grid-cols-4 lg:grid-cols-8 gap-1">
                   {skillsSection.programming.map((skills, i) => {
                     return (
                       <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
