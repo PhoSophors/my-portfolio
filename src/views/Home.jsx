@@ -12,6 +12,7 @@ import SplashScreen from "../components/SplashScreen";
 import { splashScreen } from "../assets/data/data";
 // import { useLocalStorage } from "../hook/useLocalStorage";
 import Navbar from "../components/Navbar";
+import About from "../components/About";
 
 
 
@@ -57,6 +58,7 @@ const Home = () => {
             {/* <motion.div className="progress-bar" style={{ scaleX }} /> */}
             <Navbar />
             <HeroImg />
+            <About/>
             <Skill />
             <Project />
             <Contact />

@@ -1,12 +1,8 @@
-
-import "../assets/css/textStyle.css";
 import travel_frontend from "../assets/img/travel_frontend.png";
 import travel_official from "../assets/img/travel_official.png";
 import "../assets/css/reveal.css";
 import "../components/Reveal";
 import library from "../assets/img/library_ofiicial.png";
-import { motion } from "framer-motion";
-
 
 function Project() {
   return (
@@ -24,20 +20,8 @@ function Project() {
               <br />
               {/* grid 1 */}
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
-                <motion.div
-                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-amber-300"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: "spring",
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
-                  }}
+                <div
+                  className="reveal fade-left p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-amber-300"
                 >
                   <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://the-travels.vercel.app/" target="blank">
@@ -81,22 +65,10 @@ function Project() {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
-                  className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-pink-700"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: "spring",
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
-                  }}
+                <div
+                  className="reveal fade-bottom p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-pink-700"
                 >
                   <div className=" bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a href="https://cam-travel.store/" target="blank">
@@ -140,22 +112,11 @@ function Project() {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
 
-                <motion.div
+                <div
                   className="reveal fade-right p-6 rounded-3xl  border-dashed border-2 border-sky-500 border-gray-200  shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-green-300"
-                  initial={{ opacity: 0, scale: 0.5 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{
-                    duration: 0.3,
-                    ease: [0, 0.71, 0.2, 1.01],
-                    scale: {
-                      type: "spring",
-                      damping: 5,
-                      stiffness: 100,
-                      restDelta: 0.001,
-                    },
-                  }}
+                 
                 >
                   <div className="bg-white  border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                     <a
@@ -200,7 +161,7 @@ function Project() {
                       </a>
                     </div>
                   </div>
-                </motion.div>
+                </div>
               </div>
               {/* end grid 1*/}
             </div>

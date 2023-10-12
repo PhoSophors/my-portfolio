@@ -26,10 +26,7 @@ const greeting = {
 };
 
 
-
-
 // Skills Section
-
 const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
