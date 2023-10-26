@@ -29,6 +29,8 @@
     "react-animated-cursor": "^2.8.1",
     "react-dom": "^18.2.0",
     "react-easy-emoji": "^1.8.1",
+    "react-native-communications": "^2.2.1",
+    "react-native-phone-call": "^1.2.0",
     "react-router-dom": "^6.15.0",
     "react-scroll": "^1.8.9",
     "sass": "^1.68.0"

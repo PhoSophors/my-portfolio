@@ -21,7 +21,7 @@ const Skill = () => {
 
           {/* programming languages section*/}
           <section className="reveal fade-left ">
-            <span className="descrip text-center">+ Programming</span>
+            <span className="skill-descrip  text-center">+ Programming</span>
             <div className="w-full flex md:justify-center">
               <div className="mx-auto flex  ">
                 <div className="felx grid grid-cols-4 md:grid-cols-4 lg:grid-cols-8 gap-1">
@@ -30,10 +30,10 @@ const Skill = () => {
                       <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                         key={i}
                       >
-                        <div className=" font-normal text-center dark:text-gray-400">
+                        <div className="skill-name font-normal text-center dark:text-gray-400">
                           {skills.skillName}
                         </div>
-                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p className="skill-name  font-normal text-center tp dark:text-red-400">
                         <p>{skills.percentage}</p>
                         </p>
                       </div>
@@ -46,7 +46,7 @@ const Skill = () => {
 
           {/* framework and tool section */}
           <section className="reveal fade-right ">
-            <span className="descrip text-center">+ Framework & Style</span>
+            <span className="skill-descrip text-center">+ Framework & Style</span>
             <div className="w-full flex  md:justify-center">
               <div className="mx-auto flex ">
                 <div className="grid grid-cols-3  md:grid-cols-4 lg:grid-cols-6 gap-1">
@@ -55,10 +55,10 @@ const Skill = () => {
                       <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                         key={i}
                       >
-                        <div className=" font-normal text-center tp dark:text-gray-400">
+                        <div className="skill-name  font-normal text-center tp dark:text-gray-400">
                           {skills.skillName}
                         </div>
-                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p className="skill-name font-normal text-center tp dark:text-red-400">
                         <p>{skills.percentage}</p>
                         </p>
                       </div>
@@ -71,7 +71,7 @@ const Skill = () => {
 
           {/* database and tool section*/}
           <section className="reveal fade-bottom ">
-            <span className="descrip text-center">+ Database & Tool</span>
+            <span className="skill-descrip text-center">+ Database & Tool</span>
             <div className="w-full flex ">
               <div className="mx-auto flex">
                 <div className="grid grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-1">
@@ -80,10 +80,10 @@ const Skill = () => {
                       <div className="block max-w-sm p-3 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
                         key={i}
                       >
-                        <div className=" font-normal text-center tp dark:text-gray-400">
+                        <div className="skill-name font-normal text-center tp dark:text-gray-400">
                           {skills.skillName}
                         </div>
-                        <p className="font-normal text-center tp dark:text-red-400">
+                        <p className="skill-name font-normal text-center tp dark:text-red-400">
                         <p>{skills.percentage}</p>
                         </p>
                       </div>

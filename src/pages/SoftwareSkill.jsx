@@ -1,6 +1,3 @@
-
-// import "./SoftwareSkill.scss";
-
 import { skillsSection } from "../assets/data/data";
 import "../assets/css/softwareSkill.css";
 

@@ -70,16 +70,6 @@ span {
   background-color: #06132320;
   transition: .3s;
 }
-/* 
-.progress-bar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5px;
-  background: var(--orange);
-  transform-origin: 0%;
-} */
 
 .nav-menu{
   display: flex;

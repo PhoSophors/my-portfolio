@@ -1,0 +1,52 @@
+.subt {
+  display: flex;
+  justify-content: center;
+}
+.contact-title {
+  font-family: 'Noto Sans Khmer', sans-serif;
+  color: #868e96;
+  font-size: 20px;
+  line-height: 40px;
+  display: flex;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  width: 40%;
+  text-align: center;
+}
+.span {
+  
+  color: #868e96;
+  font-size: 15px;
+}
+
+@media (max-width: 768px)
+{
+  .contact-title {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 768px)
+ {
+  .contact-title {
+    width: fit-content;
+  }
+}
+
+@media (max-width: 1290px)
+{
+  .contact-title {
+    width: fit-content;
+  }
+
+}
+
+@media (max-width: 1290px)
+{
+  .contact-title {
+    width: fit-content;
+  }
+}
+
+
+   
