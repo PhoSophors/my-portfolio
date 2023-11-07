@@ -7,6 +7,7 @@ import travel_official from "../img/travel_official.png";
 import library from "../img/library_ofiicial.png";
 import yt2mp3 from "../img/yt2mp3.png";
 import ITE_Calculator from "../img/ITE_Calculator.png";
+import country from "../img/country-catalog.png";
 
 // Splash Screen
 const splashScreen = {
@@ -155,6 +156,12 @@ const project = {
       title : "Cam-Libray (ReactJS)",
       subTitle: "Library system projects can be useful for libraries in a number of ways, such as helping them spend more time searching for books, saving time, and having lots of books.",
       link : "https://cam-library-official.vercel.app/",
+    },
+    {
+      img: country,
+      title: "Countries Catalog",
+      subTitle: "A countries catalog website is a website that provides information about countries around the world. such as the country's capital, currency, population, and official language. Find country by search by name.",
+      link : "https://country-catalogs.vercel.app/",
     },
     {
       img: yt2mp3,
