@@ -18,13 +18,17 @@ const Navbar = () => {
   };
   window.addEventListener("scroll", changeColor);
 
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
   return (
     <>
       <div className={color ? "header header-bg" : "header"}>
         <Link to="hero" spy={true} smooth={true} offset={50} duration={500}>
           <div href="/" className="logo">
             <span className="grey-color"> &lt;</span>
-            <span className="logo-name">
+            <span onClick={refreshPage} className="logo-name">
               <>Pho Sophors._.</>
             </span>
             <span className="grey-color">/&gt;</span>
